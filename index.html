@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .left-section {
+            grid-area: left-section;
+        }
+
+        .right-section {
+            grid-area: right-section;
+        }
+
+        .main-content {
+            display: grid;
+            
+        grid-template-areas:'left-section left-section left-section right-section right-section right-section right-section right-section right-section right-section'
+            ;
+           }
+
+        .left-section {
+
+            width: 300px;
+            background-color: blue;
+
+
+        }
+
+        .right-section {
+            background-color: skyblue;
+            width: 1188px;
+
+
+        }
+
+        .left-section .left-content {
+            padding: 1rem;
+        }
+
+        .left-content .profile-image {
+            display: block;
+            margin: auto;
+            border: 5px white solid;
+            border-radius: 30%;
+            width: 60%;
+        }
+
+        .left-content .name {
+            font-size: 1.2 rem;
+            font-weight: 700px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.02px;
+            padding: 0.8rem;
+        }
+
+        .left-content .designation {
+            font-size: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 0.5rem;
+        }
+
+        .left-content .description {
+            font-size: 0.75 rem;
+            text-align: center;
+            padding: 1 rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .left-content .skills {
+            font-size: 0.75 rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1rem 0.5rem;
+        }
+
+        .left-content .skill-name {
+            font-size: 0.65 rem;
+            font-weight: 0.65 rem;
+            text-align: left;
+            padding-bottom: 0.5 rem;
+        }
+
+        .left-content .progress-bar {
+            border: 1px white solid;
+            height: 4px;
+        }
+
+        .right-section .right-main-content {
+            padding: 2rem 3rem;
+        }
+
+        .right-section .right-main-content .right-title {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 0.5 rem;
+            letter-spacing: 1px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <main class="main-content">
+
+
+
+        <section class="left-section">
+
+            <div class="left-content">
+                <div><img src="C:\Users\PRASHANT\Downloads\WhatsApp Image 2022-07-03 at 6.05.00 PM.jpeg" width="100"
+                        height="120" alt="Profile Photo" class="profile-image"></div>
+
+                <div>
+                    <h1 class="name">Prashant Jaiswal</h1>
+                </div>
+
+                <div>
+                    <h3 class="designation">Designation:Frontend Devoloper</h3>
+                </div>
+
+                <div class="description">
+                    <h3>Hi!I am Frontend Devoloper and worked in HCL as Techinal Analyst</h3>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Contact Information:</h3>
+                    <h4><i class="fa fa-phone"></i>+91 6307190468 </h4>
+                    <h4><i class="fa fa-map-marker"></i>D59/352 KH-1 Jai Prakash Nagar</h4>
+                </div>
+                <div class="icon">
+
+                    <button onclick="window.location.href='https://www.github.com/prashant575';" value="Github"><a
+                            href="#" class="fa fa-github"></a>Github</button>
+                    <button onclick="window.location.href='https://www.linkedin.com/in/prashant-jaiswal-23033a148';"
+                        value="LinkedIn"><a href="#" class="fa fa-linkedin"></a> LinkedIn</button>
+                </div>
+                <div class="skills">
+                    <h1 style="text-align: center">SKILLS</h1>
+                </div>
+                <label for="file" class="skill-name">Java</label></br>
+                <progress id="file" class="progress-bar" value="50" max="100"></progress></br>
+                <label for="file" class="skill-name">HTML</label></br>
+                <progress id="file" class="progress-bar" value="80" max="100"></progress></br>
+                <label for="file" class="skill-name">CSS</label></br>
+                <progress id="file" class="progress-bar" value="50" max="100"></progress></br>
+                <label for="file" class="skill-name">Javascript</label></br>
+                <progress id="file" class="progress-bar" value="0" max="100"></progress></br>
+
+            </div>
+
+        </section>
+        <section class="right-section">
+            <div class="right-main-content">
+                <h1 class="right-title">About me</h1>
+                <p style="font-size:20px">I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work. For example, I taught myself how to use Photoshop to 
+                    improve the quality of our photos and graphics. I soon became the go-to person for any design needs.</p>
+                <h1 class="right-title">Education</h1>
+                <p><div style="font-size:20px">10th: W H Smith Memorial School 67%</div>
+                    <div style="font-size:20px">Btech: Ashoka Institute of Technoloogy and Management Varanasi 74%</div>
+                </p>
+                <h1 class="right-title">Experience</h1>
+                <p style="font-size:20px">Experience of 1.5 Years as Techical Analyst in HCL Technologies.</p>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
